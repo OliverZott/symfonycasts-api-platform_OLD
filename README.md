@@ -24,9 +24,27 @@
     ```
     composer require api 
     ```
-   
-   
-   
+
+4. Check Documentation
+    ```
+    http://127.0.0.1:8000/api
+    ```
+
+## Database Entities
+1. Change **.env**
+    ```
+    DATABASE_URL=mysql://root:@127.0.0.1:3306/cheese_wiz
+    ```
+2. Install **maker** bundle and create *CheeseListing* entity and add some fields
+    ```
+    composer require maker --dev
+    php bin/consolse make:entity
+    ```
+ 
+3. Install **migrations**, create migration and migrate
+    ```
+    composer require migrations
+    ```
    
    
 
