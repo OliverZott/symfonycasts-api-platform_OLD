@@ -58,28 +58,29 @@ like JSON-LD, normal JSON, XML or exposing it through a GraphQL interface.
     php bin/console doctrine:migrations:migrate
     ```
    
-## Swagger / Open API
+## Swagger-UI / Open-API
 [Tutorial](https://symfonycasts.com/screencast/api-platform/swagger#play):  
 **Swagger UI** is Interface and reads/displays Json file in **Open-API** format.
-
+**Swagger Codegen** to create SDK for API in various languages.
 
 
 Check **API**
-```angular2
+```angular2 
 http://127.0.0.1:8000/api
 ```
 
 testing and checking: add 2 cheeses and send  request:
-```angular2
+```angular2 
 http://127.0.0.1:8000/api/cheese_listings/2.jsonld
 ```
 
 Set to OpenApi 3 version:
-```angular2
+```angular2 
 http://127.0.0.1:8000/api?spec_version=3
 http://127.0.0.1:8000/api/docs.json
 http://127.0.0.1:8000/api/docs.json?spec_version=3
 ```
 
+## JSON-LD / RDF
 
 ## ...
