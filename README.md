@@ -1,5 +1,6 @@
 # API Platform Tutorial
-[API Platform](https://symfonycasts.com/screencast/api-platform)
+[API Platform](https://symfonycasts.com/screencast/api-platform)  
+https://symfonycasts.com/tracks/rest?cid=apip#api-platform
 
 ## Setup
 1. **Download Composer dependencies**
@@ -60,27 +61,44 @@ like JSON-LD, normal JSON, XML or exposing it through a GraphQL interface.
    
 ## Swagger-UI / Open-API
 [Tutorial](https://symfonycasts.com/screencast/api-platform/swagger#play):  
-**Swagger UI** is Interface and reads/displays Json file in **Open-API** format.
-**Swagger Codegen** to create SDK for API in various languages.
+- **Swagger UI** is Interface and reads/displays Json file in **Open-API** format.  
+- **Swagger Codegen** to create SDK for API in various languages.  
+
+
 
 
 Check **API**
-```angular2 
+```
 http://127.0.0.1:8000/api
 ```
 
-testing and checking: add 2 cheeses and send  request:
-```angular2 
+Testing and checking without Swagger, add:
+- .jsonld
+- .json
+- Postman key: "accept" value: "application/json"
+```
 http://127.0.0.1:8000/api/cheese_listings/2.jsonld
+http://127.0.0.1:8000/api/cheese_listings.json
 ```
 
 Set to OpenApi 3 version:
-```angular2 
+```
 http://127.0.0.1:8000/api?spec_version=3
 http://127.0.0.1:8000/api/docs.json
 http://127.0.0.1:8000/api/docs.json?spec_version=3
 ```
 
-## JSON-LD / RDF
+## JSON-LD / RDF / Hydra
+Follow: @context @vocab
+```
+http://127.0.0.1:8000/api/cheese_listings/2.jsonld
+http://127.0.0.1:8000/api/contexts/CheeseListing
+http://127.0.0.1:8000/api/docs.jsonld#
+```
 
-## ...
+Basically two specifications:
+- OpenAPI specification (eg. for using swagger)
+- JSON-LD Hydra specification (more powerfull)
+
+## API Debugging with Profiler
+ 
