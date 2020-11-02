@@ -101,4 +101,9 @@ Basically two specifications:
 - JSON-LD Hydra specification (more powerfull)
 
 ## API Debugging with Profiler
+ `http://127.0.0.1:8000/_profiler/`
+ 
+## Operations
+- Collection operations
+- Item operations ...`{id}`
  
