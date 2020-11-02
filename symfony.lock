@@ -247,17 +247,8 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
-    "symfony/mime": {
-        "version": "v4.3.1"
-    },
     "symfony/orm-pack": {
         "version": "v1.0.8"
-    },
-    "symfony/polyfill-intl-idn": {
-        "version": "v1.11.0"
-    },
-    "symfony/polyfill-intl-normalizer": {
-        "version": "v1.20.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.11.0"
@@ -265,8 +256,8 @@
     "symfony/polyfill-php72": {
         "version": "v1.11.0"
     },
-    "symfony/polyfill-php73": {
-        "version": "v1.11.0"
+    "symfony/profiler-pack": {
+        "version": "v1.0.5"
     },
     "symfony/property-access": {
         "version": "v4.2.12"
@@ -353,11 +344,28 @@
             "config/packages/validator.yaml"
         ]
     },
+    "symfony/var-dumper": {
+        "version": "v4.2.12"
+    },
     "symfony/var-exporter": {
         "version": "v4.2.8"
     },
     "symfony/web-link": {
         "version": "v4.2.12"
+    },
+    "symfony/web-profiler-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
+        },
+        "files": [
+            "config/packages/dev/web_profiler.yaml",
+            "config/packages/test/web_profiler.yaml",
+            "config/routes/dev/web_profiler.yaml"
+        ]
     },
     "symfony/yaml": {
         "version": "v4.2.8"
