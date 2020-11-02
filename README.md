@@ -107,3 +107,5 @@ Basically two specifications:
 - Collection operations
 - Item operations ...`{id}`
  
+## Serializer
+
